@@ -1,10 +1,12 @@
 import './App.css';
-import { Accessibility, Copy, Header } from './Meta.js';
+import { Accessibility, Background, Copy } from './components/Meta.tsx';
+import { NavBar } from './components/NavBar.tsx';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NavBar />
+      <Background />
       <Copy />
       <Accessibility />
     </div>
