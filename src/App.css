@@ -22,3 +22,28 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+.title {
+  color: #f2f2f2;
+  font-size: 2.9em;
+  font-weight: bold;
+  font-weight: 500;
+  margin: 0.6em 0.2em 0.1em 0;
+}
+
+@keyframes glowfrank {
+	0% {text-shadow: 0 0 0.05em black;}
+	50% {text-shadow: 0 0 0.15em gold;}
+	100% {text-shadow: 0 0 0.05em black;}
+}
+.glowfrank {
+    animation-name: glowfrank;
+    animation-duration: 10s;
+    animation-iteration-count: 999999;
+}
+
+.navbar {
+  background-color: #9994;
+  color: #ddd;
+  font-weight: bold;
+}

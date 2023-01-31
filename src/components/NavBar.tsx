@@ -63,6 +63,7 @@ const navLinkGroups: INavLinkGroup[] = [
 export const NavBar: React.FunctionComponent = () => {
   return (
     <Nav
+      className='navbar'
       onLinkClick={_onLinkClick}
       selectedKey="Home"
       ariaLabel="Navigation bar"
