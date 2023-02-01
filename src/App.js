@@ -4,22 +4,24 @@ import { Accessibility, Background, Copy } from './components/Meta.tsx';
 import { NavBar } from './components/NavBar.tsx';
 import { Title } from './components/Title.tsx';
 import React from 'react';
+import { MainContent } from './components/MainContent.jsx';
+import { themeDark } from './components/Theme.tsx';
 
 function App() {
   return (
     <React.StrictMode>
       <div className="App">
         <link href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.3.0/css/fabric.min.css" rel="stylesheet" />
-        <ThemeProvider theme='themeDark'>
           <Title />
-          <div class="ms-Fabric" dir="ltr">
-            <div class="ms-Grid">
-              <div class="ms-Grid-row">
-                <div class="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+          <ThemeProvider theme={themeDark}>
+          <div className="ms-Fabric" dir="ltr">
+            <div className="ms-Grid">
+              <div className="ms-Grid-row">
+                <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
                   <NavBar />
                 </div>
-                <div class="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
-                  <NavBar />
+                <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
+                  <MainContent />
                 </div>
               </div>
             </div>
