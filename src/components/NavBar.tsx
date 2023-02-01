@@ -3,8 +3,6 @@ import { Nav, INavLink, INavStyles, INavLinkGroup } from '@fluentui/react/lib/Na
 
 const navStyles: Partial<INavStyles> = {
   root: {
-    width: 400,
-    height: 350,
     boxSizing: 'border-box',
     border: '1px solid #eee',
     overflowY: 'auto',
