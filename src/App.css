@@ -60,5 +60,9 @@
 .basecard {
   background-color: #ddd5;
   margin: 8px;
-  padding: 8px
+  padding: 8px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
