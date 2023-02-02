@@ -9,22 +9,15 @@ const frank: IPersonaSharedProps = {
   secondaryText: 'Software Engineer'
 };
 
-const styles = {
-  root: [
-    {
-      color: 'green'
-    }
-  ]
-};
-
 
 export const ProfilePicture = () => {
   return (
-    <Persona
-      {...frank}
-      size={PersonaSize.size72}
-      imageAlt='Yitong Wu'
-      styles={styles}
-    />
+    <div className='basecard'>
+      <Persona
+        {...frank}
+        size={PersonaSize.size72}
+        imageAlt='Yitong Wu'
+      />
+    </div>
   );
 };

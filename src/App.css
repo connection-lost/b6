@@ -32,18 +32,33 @@
 }
 
 @keyframes glowfrank {
-	0% {text-shadow: 0 0 0.05em black;}
-	50% {text-shadow: 0 0 0.15em gold;}
-	100% {text-shadow: 0 0 0.05em black;}
+  0% {
+    text-shadow: 0 0 0.05em black;
+  }
+
+  50% {
+    text-shadow: 0 0 0.15em gold;
+  }
+
+  100% {
+    text-shadow: 0 0 0.05em black;
+  }
 }
+
 .glowfrank {
-    animation-name: glowfrank;
-    animation-duration: 10s;
-    animation-iteration-count: 999999;
+  animation-name: glowfrank;
+  animation-duration: 10s;
+  animation-iteration-count: 999999;
 }
 
 .navbar {
   background-color: #9994;
   color: #ddd;
   font-weight: bold;
+}
+
+.basecard {
+  background-color: #ddd5;
+  margin: 8px;
+  padding: 8px
 }
