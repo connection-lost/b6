@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IPersonaSharedProps, Persona, PersonaSize } from '@fluentui/react/lib/Persona';
-import profileImage from '../../res/profile.jpg';
+import profileImage from 'res/profile.jpg';
 
 const frank: IPersonaSharedProps = {
   imageUrl: profileImage,

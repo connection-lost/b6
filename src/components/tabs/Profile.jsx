@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ProfilePicture } from '../cards/ProfilePicture.tsx';
+import { ProfilePicture } from 'components/cards/ProfilePicture.tsx';
 
 export const Profile = () => {
   return (
