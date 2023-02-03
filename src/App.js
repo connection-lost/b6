@@ -6,26 +6,24 @@ import { Title } from 'components/Title.tsx';
 import React from 'react';
 import { MainContent } from 'components/MainContent.jsx';
 import { themeDark } from 'components/Theme.tsx';
+import { Grid } from 'fluentui-react-grid';
 
 function App() {
   return (
     <React.StrictMode>
       <div className="App">
-        <link href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.3.0/css/fabric.min.css" rel="stylesheet" />
-          <Title />
-          <ThemeProvider theme={themeDark}>
-          <div className="ms-Fabric" dir="ltr">
-            <div className="ms-Grid">
-              <div className="ms-Grid-row">
-                <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
-                  <NavBar />
-                </div>
-                <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
-                  <MainContent />
-                </div>
-              </div>
-            </div>
-          </div>
+        <Title />
+        <ThemeProvider theme={themeDark}>
+          <Grid dir="ltr">
+            <Grid.Row>
+              <Grid.Col sizeSm={6} sizeMd={4} sizeLg={2}>
+                <NavBar />
+              </Grid.Col>
+              <Grid.Col sizeSm={6} sizeMd={8} sizeLg={10}>
+                <MainContent />
+              </Grid.Col>
+            </Grid.Row>
+          </Grid>
         </ThemeProvider>
         <Copy />
         <Accessibility />
